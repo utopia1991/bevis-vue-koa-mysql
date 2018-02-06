@@ -1,0 +1,63 @@
+// icon 图标统一放在这里维护
+@mixin icon {
+	width: 24px;
+	height: 24px;
+	top: 5px;
+	display: inline-block;
+	position: relative;
+	background: url('./assets/images/icon.png') no-repeat;
+}
+
+.icon-menu {
+	@include icon;
+	background-position: -10px -106px;
+}
+
+.icon-logout {
+	@include icon;
+	background-position: -108px -18px;
+}
+
+.icon-message {
+	@include icon;
+	background-position: -64px -64px;
+	margin-right: 12px;
+}
+
+.icon-title {
+	@include icon;
+	left: 7px;
+	background-position: -108px -63px;
+}
+
+.icon-extend {
+	@include icon;
+	width: 10px;
+	height: 30px;
+	top: 0;
+	background-position: -48px -98px;
+}
+
+.icon-search-extend {
+	@include icon;
+	width: 14px;
+	height: 12px;
+	top: 0;
+	background-position: -44px -150px;
+}
+
+.icon-collapse {
+	@include icon;
+	width: 10px;
+	height: 30px;
+	top: 0;
+	background-position: -20px -100px;
+}
+
+.icon-nav-collapse {
+	@include icon;
+	width: 14px;
+	height: 12px;
+	top: 0;
+	background-position: -10px -150px;
+}

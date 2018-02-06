@@ -1,0 +1,50 @@
+.box {
+  .block {
+    padding: 0 10px;
+
+    .item {
+      margin: 4px;
+    }
+
+    .box-card {
+      width: 480px;
+
+      .text {
+        font-size: 14px;
+      }
+
+      .item {
+        padding: 18px 0;
+      }
+
+      .clearfix:after,
+      .clearfix:before {
+        display: table;
+        content: "";
+      }
+
+      .clearfix:after {
+        clear: both;
+      }
+    }
+
+    .el-carousel__item {
+      h3 {
+        color: #475669;
+        font-size: 18px;
+        opacity: 0.75;
+        line-height: 300px;
+        margin: 0;
+        text-align: center;
+      }
+
+      &:nth-child(2n) {
+        background-color: #99a9bf;
+      }
+
+      &:nth-child(2n+1) {
+        background-color: #d3dce6;
+      }
+    }
+  }
+}

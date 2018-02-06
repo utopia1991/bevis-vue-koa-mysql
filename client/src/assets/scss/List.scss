@@ -1,0 +1,35 @@
+@import './Base.scss';
+
+.box {
+  .search {
+    margin-bottom: 20px;
+    border-bottom: 1px solid $default-border;
+
+    .el-form-item {
+      margin: 0 15px 20px 0;
+
+      .search-label {
+        display: inline-block;
+        min-width: 70px;
+        text-align: right;
+      }
+
+      .el-input,
+      .el-select {
+        width: 180px;
+      }
+
+      .date-picker {
+        width: 320px;
+      }
+    }
+  }
+
+  .tools {
+    margin-bottom: 20px;
+  }
+
+  .pagination {
+    padding: 10px;
+  }
+}

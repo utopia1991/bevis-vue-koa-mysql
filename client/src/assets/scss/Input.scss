@@ -1,0 +1,31 @@
+.box {
+  .block {
+    padding: 0 10px;
+
+    .checkbox {
+      display: inline-block;
+      margin-left: 8px;
+    }
+
+    .input2,
+    .textarea {
+      width: 300px;
+    }
+
+    .preSelect {
+      width: 110px;
+    }
+
+    .multiInput {
+      width: 400px;
+    }
+
+    .upload-demo {
+      display: inline-block;
+    }
+
+    .rate {
+      display: inline-block;
+    }
+  }
+}

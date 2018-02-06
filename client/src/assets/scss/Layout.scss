@@ -1,0 +1,280 @@
+@import './Base.scss';
+
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+
+  .header {
+    height: 60px;
+    line-height: 60px;
+    background: $color-blue;
+    color: #fff;
+
+    .menu-nav {
+      float: left;
+      background: $color-blue;
+      line-height: 54px;
+
+      .menu-items {
+        color: $color-white;
+        display: inline-block;
+        border-top: 4px solid $color-blue;
+        border-bottom: none;
+        font-size: 16px;
+        padding: 0 28px;
+
+        &.router-link-active,
+        &:hover {
+          border-bottom: none;
+          background-color: $color-dark-blue;
+          border-top: 4px solid $color-hover;
+        }
+      }
+    }
+
+    .userinfo-inner {
+      cursor: pointer;
+      color: #fff;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin: 10px 0 10px 10px;
+        float: right;
+      }
+    }
+
+    .userinfo {
+      text-align: right;
+      float: left;
+
+      .username {
+        margin: 0 20px;
+      }
+
+      .logout {
+        float: right;
+        text-align: center;
+        border-left: 1px solid $color-border;
+        cursor: pointer;
+        height: 40px;
+        line-height: 40px;
+        margin: 10px 0;
+        padding: 0 16px;
+        font-size: 16px;
+      }
+    }
+
+    .logo {
+      height: 60px;
+      padding: 0 20px;
+      border-right: 1px solid $color-border;
+      border-bottom: 1px solid $color-border;
+
+      img {
+        width: 40px;
+        float: left;
+        margin: 10px 10px 10px 18px;
+      }
+
+      .txt {
+        color: #fff;
+      }
+    }
+
+    .logo-width {
+      background-color: $color-blue;
+      background: url("../assets/images/logo.png") center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .logo-collapse-width {
+      width: 60px;
+    }
+
+    .tools {
+      float: left;
+      padding: 0 23px;
+      width: 14px;
+      height: 60px;
+      line-height: 60px;
+      cursor: pointer;
+    }
+  }
+
+  .main {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    overflow: hidden;
+    background: #f6f6f6;
+
+    .extendmenu {
+      margin-left: -16.6666%;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .collapsemenu {
+      margin-left: 0;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .aside {
+      background-color: $color-dark-blue;
+
+      .el-menu {
+        height: 100%;
+        background-color: $color-dark-blue;
+      }
+
+      .vertical-submenu {
+        border-bottom: 1px solid $color-border;
+
+        .new-submenu {
+          padding-left: 50px !important;
+        }
+      }
+
+      .collapsed {
+        width: 60px;
+
+        .item {
+          position: relative;
+        }
+
+        .el-submenu__title {
+          padding-left: 20px;
+        }
+
+        .submenu {
+          position: absolute;
+          top: 0;
+          left: 60px;
+          z-index: 99999;
+          height: auto;
+          display: none;
+        }
+      }
+    }
+
+    .extend-bar {
+      margin-top: 20%;
+      position: relative;
+      display: inline-block;
+      width: 10px;
+      height: 30px;
+      background: $color-white;
+      border: 1px solid $default-border;
+      border-left: none;
+      cursor: pointer;
+    }
+
+    .collapse-bar {
+      margin-top: 20%;
+      position: relative;
+      display: inline-block;
+      width: 10px;
+      height: 30px;
+      background: $color-blue;
+      border: none;
+      cursor: pointer;
+    }
+
+    .aside-menu {
+      width: 100%;
+
+      .side-nav {
+        background: $color-blue;
+
+        .nav-items,
+        .subnav-items {
+          border-bottom: 1px solid $color-border;
+          display: inline-block;
+          width: 100%;
+          height: 56px;
+          line-height: 56px;
+          font-size: 14px;
+          color: #fff;
+          padding: 0 20px;
+          cursor: pointer;
+          position: relative;
+          transition: border-color 0.3s,background-color 0.3s,color 0.3s;
+          box-sizing: border-box;
+          white-space: nowrap;
+
+          &.router-link-active,
+          &:hover {
+            background-color: $color-hover !important;
+          }
+
+          &.router-link-active:after {
+            content: url("../assets/images/nav-active.png");
+            display: inline-block;
+            width: 16px;
+            height: 20px;
+            right: -6px;
+            position: absolute;
+            top: 5px;
+          }
+        }
+
+        .subnav-items {
+          background-color: $color-dark-blue !important;
+        }
+      }
+    }
+
+    .content-container {
+      flex: 1;
+      overflow-y: scroll;
+      padding: 15px 15px 40px 5px;
+
+      .breadcrumb-container {
+        .title {
+          width: 200px;
+          float: left;
+          color: #475669;
+        }
+
+        .breadcrumb-inner {
+          float: left;
+          font-size: 16px;
+        }
+      }
+
+      .content-wrapper {
+        background-color: #fff;
+        box-sizing: border-box;
+        border: 1px solid $default-border;
+
+        .content-title {
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+          font-size: 16px;
+          margin: 0;
+          background: #f5f5f5;
+          border-bottom: 1px solid $default-border;
+
+          .content-title-logo {
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            border-right: 1px solid $default-border;
+          }
+
+          .content-title-name {
+            display: inline-block;
+            margin-left: 10px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

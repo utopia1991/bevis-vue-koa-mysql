@@ -1,0 +1,18 @@
+{
+    "success": true,
+    "value": {
+        "totalCount": 1,
+        "rows": [
+            {
+                "name": "aaaa",
+                "email": "aaaa",
+                "limit": "aaaa",
+                "start": "aaaa",
+                "manage": "aaaa",
+                "vipLevel": 3,
+                "industry": "2222",
+                "status": "aaaa"
+            }
+        ]
+    }
+}

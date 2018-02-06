@@ -1,0 +1,68 @@
+@import './Base.scss';
+@import './Icon.scss';
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+
+.clearfix {
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+}
+
+#app {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.box {
+	padding: 20px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+	transition: all 0.2s ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+	opacity: 0;
+}
+
+// 覆盖element原有样式
+
+.el-menu-item {
+	border-bottom: 1px solid $color-border;
+	color: $color-white !important;
+
+	&:hover {
+		background-color: $color-blue;
+	}
+}
+
+.el-submenu__title {
+	border-bottom: 1px solid $color-border;
+	color: $color-white !important;
+
+	&:hover {
+		background-color: $color-blue !important;
+	}
+}
+
+.el-menu {
+	.menu-items {
+		color: $color-white !important;
+	}
+
+	i {
+		color: $color-white;
+		font-size: 16px;
+	}
+}

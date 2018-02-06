@@ -1,0 +1,84 @@
+{
+  "msg": "请求成功",
+  "value": {
+    "authUrl": [
+      "/403",
+      "/404",
+      "/infor",
+      "/infor/information",
+      "/infor/service",
+      "/report",
+      "/report/connect",
+      "/report/manage",
+      "/report/manage/edit",
+      "/office",
+      "/office/plan",
+      "/office/brace",
+      "/office/clue",
+      "/office/task",
+      "/office/others"
+    ],
+    "menu": [
+      {
+        "cnName": "项目信息",
+        "code": "CUST_MANAGE_1",
+        "url": "/infor",
+        "children": [{
+          "url": "/infor/information",
+          "cnName": "客户基本信息",
+          "children": []
+        }, {
+          "url": "/infor/service",
+          "children": [],
+          "cnName": "产品服务单"
+        }]
+      },
+      {
+        "cnName": "项目汇报",
+        "code": "SRV_MANAGE",
+        "url": "/report",
+        "children": [
+          {
+            "cnName": "项目沟通",
+            "code": "SRV_CONF",
+            "url": "/report/connect",
+            "children": []
+          },
+          {
+            "cnName": "进度管理",
+            "code": "STAT_ANALYSIS",
+            "url": "/report/manage",
+            "children": []
+          }
+        ]
+      },
+      {
+        "cnName": "项目事务",
+        "code": "VERSION_MANAGE",
+        "url": "/office",
+        "children": [{
+          "url": "/office/plan",
+          "cnName": "文档计划",
+          "children": []
+        }, {
+          "url": "/office/brace",
+          "children": [],
+          "cnName": "客服支撑"
+        }, {
+          "url": "/office/clue",
+          "children": [],
+          "cnName": "项目线索"
+        }, {
+          "url": "/office/task",
+          "children": [],
+          "cnName": "任务管理"
+        }, {
+          "url": "/office/others",
+          "children": [],
+          "cnName": "其他事务"
+        }]
+      }
+    ]
+  },
+  "success":true
+}
